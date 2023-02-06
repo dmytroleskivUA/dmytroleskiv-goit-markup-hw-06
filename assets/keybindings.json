@@ -1,0 +1,19 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "cmd+s",
+    "command": "extension.multiCommand.execute",
+    "args": {
+      "sequence": ["attrsSorter.execute", "workbench.action.files.save"]
+    },
+    "when": "editorLangId == html"
+  },
+  {
+    "key": "cmd+s",
+    "command": "extension.multiCommand.execute",
+    "args": {
+      "sequence": ["postcssSorting.execute", "workbench.action.files.save"]
+    },
+    "when": "editorLangId == css"
+  }
+]
