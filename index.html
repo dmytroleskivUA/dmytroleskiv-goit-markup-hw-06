@@ -544,8 +544,28 @@
             </li>
           </ul>
         </div>
+      
+
+      
+        <div class="footer-sbc-wrap">
+          <p class="footer-sbc-text">Subscribe</p>
+
+          <form class="footer-sbc-form" autocomplete="off"></form>
+          <label>
+            <input type="email" name="sbc-mail" class="sbc-form-input" required placeholder="Email"/>
+          </label>
+          <button type="submit" class="sbc-form-btn">Subscribe
+            <svg class="subscribe-form-btn-icon" width="24" height="20">
+                <use href="./images/icons.svg#icon-tick" />
+              </svg>
+          </button>
+        
+      </form>
+      </div>
       </div>
     </footer>
+
+    <!-- Modal window -->
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -557,6 +577,94 @@
       </div>
     </div>
 
+
+    <!-- FORMS -->
+
+    
+    <p class="modal-form-text text-center">Leave your contacts and we will call you back</p>
+
+        <form class="modal-form">
+          <label class="modal-form-field">
+            <span class="modal-form-input-desc">Name</span>
+            <span class="modal-form-thumb">
+              <input
+                type="text"
+                name="user_name"
+                class="modal-form-input"
+                required
+                pattern="^[a-zA-Zа-яА-Я]+"
+                minlength="4"
+              />
+              <svg class="modal-form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person" />
+              </svg>
+            </span>
+          </label>
+
+          <label class="modal-form-field">
+            <span class="modal-form-input-desc">Phone</span>
+            <span class="modal-form-thumb">
+              <input
+                type="tel"
+                name="user_phone"
+                class="modal-form-input"
+                required
+                pattern="[0-9]{3}-[0-9]{7}"
+                title="xxx-xxxxxxx"
+              />
+              <svg class="modal-form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone-form" />
+              </svg>
+            </span>
+          </label>
+
+          <label class="modal-form-field">
+            <span class="modal-form-input-desc">Email</span>
+            <span class="modal-form-thumb">
+              <input type="email" name="user_email" class="modal-form-input" />
+              <svg class="modal-form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email-form" />
+              </svg>
+            </span>
+          </label>
+
+          <label class="modal-form-field">
+            <span class="modal-form-input-desc">Comment</span>
+            <textarea
+              class="modal-form-comment"
+              name="user_comment"
+              placeholder="Text input ..."
+            ></textarea>
+          </label>
+
+          <input
+            id="user-policy"
+            type="checkbox"
+            name="user_policy"
+            class="modal-form-check visually-hidden"
+          />
+          <label for="user-policy" class="modal-form-check-desc">
+            <!-- <span class="modal-form-checkbox-fake">
+              <svg class="" width="" height="">
+                opacity
+                <use href="./images/icons.svg#" />
+              </svg>
+            </span> -->
+            I accept the terms and conditions of the&nbsp;<a class="modal-form-link" href=""
+              >Privacy Policy</a
+            >
+          </label>
+
+          <button type="submit" class="modal-form-submit-btn">Send</button>
+        </form>
+      </div>
+    </div>
+
+
     <script src="./js/modal.js"></script>
+
+    
+
+    
   </body>
 </html>
