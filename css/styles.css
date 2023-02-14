@@ -1170,6 +1170,7 @@ button {
 
 .modal-form-link {
   color: var(--logo-blue-txt-cl);
+  padding-left: 4px;
 }
 
 .modal-form-submit-btn {
