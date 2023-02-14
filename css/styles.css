@@ -903,17 +903,17 @@ button {
 /* Footer-Subscribe */
 
 .footer-sbc-wrap {
-  margin-left: 80px;
   align-content: center;
+  margin-left: 80px;
 }
 
 
 .footer-sbc-text {
   margin-bottom: 16px;
+  color: var(--light-primary-text-cl);
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--light-primary-text-cl);
 }
 
 .footer-sbc-form {
@@ -923,18 +923,18 @@ button {
 }
 
 .sbc-form-input {
-  color: var(--light-primary-text-cl);
+  width: 264px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
   background-color: var(--hero-footer-bg-cl);
+  color: var(--light-primary-text-cl);
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-
-  padding-left: 16px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  width: 264px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
 
   transition: border-color var(--transition-anim-fast);
 }
@@ -944,23 +944,23 @@ button {
 }
 
 .sbc-form-input:focus {
-  outline: none;
   border-color: var(--light-primary-text-cl);
+  outline: none;
 }
 
 .sbc-form-btn {
-  padding: 8px 24px;
   display: flex;
   gap: 16px;
   align-items: center;
-  background-color: var(--blue-button-bg-cl);
+  padding: 8px 24px;
   border-radius: 4px;
+  background-color: var(--blue-button-bg-cl);
+  color: var(--light-primary-text-cl);
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: var(--light-primary-text-cl);
 
   transition: background-color var(--transition-anim-fast);
 }
@@ -1025,11 +1025,11 @@ button {
   align-items: center;
   width: 24px;
   height: 24px;
-  border-radius: 50%;
-  color: var(--black-txt-cl);
-  background-color: var(--footer-light-txt-cl);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  border-radius: 50%;
+  background-color: var(--footer-light-txt-cl);
+  color: var(--black-txt-cl);
   transition: color var(--transition-anim-fast), background-color var(--transition-anim-fast),
     border-color var(--transition-anim-fast);
 
@@ -1037,9 +1037,9 @@ button {
 
 .modal-btn:hover,
 .modal-btn:focus {
-  color: var(--light-primary-text-cl);
-  background-color: var(--accent-txt-bg-cl);
   border-color: transparent;
+  background-color: var(--accent-txt-bg-cl);
+  color: var(--light-primary-text-cl);
 }
 
 .modal-icon {
@@ -1048,16 +1048,16 @@ button {
 
 
 
-/* new */
+/* forms and checkbox */
 
 
 .modal-form-text {
   margin-bottom: 16px;
+  color: var(--primary-text-cl);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--primary-text-cl);
 }
 
 .modal-form {
@@ -1085,31 +1085,31 @@ button {
 }
 
 .modal-form-input {
-  color: var(--text-dark-color);
-
-  padding-left: 38px;
   width: 100%;
   height: 40px;
+
+  padding-left: 38px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  color: var(--text-dark-color);
 
   transition: border-color var(--transition-anim-fast);
 }
 
 .modal-form-input:focus {
-  outline: none;
   border-color: var(--rgba(33, 33, 33, 0.2));
+  outline: none;
 }
 
 .modal-form-icon {
   position: absolute;
   top: 50%;
   left: 16px;
-  transform: translateY(-50%);
 
   fill: var(--logo-dark-txt-cl);
 
   transition: fill var(--transition-anim-fast);
+  transform: translateY(-50%);
 }
 
 .modal-form-input:focus+.modal-form-icon {
@@ -1117,14 +1117,14 @@ button {
 }
 
 .modal-form-comment {
+  width: 100%;
+  height: 120px;
+  padding: 8px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
   color: var(--logo-dark-txt-cl);
 
   resize: none;
-  padding: 8px 16px;
-  width: 100%;
-  height: 120px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
 
   transition: border-color var(--transition-anim-fast);
 }
@@ -1134,8 +1134,8 @@ button {
 }
 
 .modal-form-comment:focus {
-  outline: none;
   border-color: rgba(33, 33, 33, 0.2);
+  outline: none;
 }
 
 .modal-form-check-desc {
@@ -1146,45 +1146,45 @@ button {
 
 .modal-form-check-desc::before {
   content: '';
-  cursor: pointer;
   display: block;
-  margin-right: 8px;
   width: 16px;
   height: 16px;
+  margin-right: 8px;
   border: 1.25px solid var(--text-dark-color);
   border-radius: 2px;
+  cursor: pointer;
 
   transition: background-image var(--transition-anim-fast),
     background-color var(--transition --transition-anim-fast), border-color var(--transition-anim-fast);
 }
 
-.modal-form-check:checked+.modal-form-check-desc::before {
-  background-image: url('../images/checked.svg');
-  background-repeat: no-repeat;
+.modal-form-checkbox:checked+.modal-form-check-desc::before {
+  border-color: var(--accent-txt-bg-cl);
+  background-color: var(--accent-txt-bg-cl);
+  background-image: url('../images/icons/tick-black.svg');
   background-position: 50% 50%;
   background-size: 10px 8px;
-  background-color: var(--accent-txt-bg-cl);
-  border-color: var(--accent-txt-bg-cl);
+  background-repeat: no-repeat;
 }
 
 
 .modal-form-link {
-  color: var(--logo-blue-txt-cl);
   padding-left: 4px;
+  color: var(--logo-blue-txt-cl);
 }
 
 .modal-form-submit-btn {
   align-self: center;
   width: 169px;
   padding: 16px 32px;
+  border-radius: 4px;
+  background-color: var(--logo-blue-txt-cl);
+  color: var(--light-primary-text-cl);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: var(--light-primary-text-cl);
-  background-color: var(--logo-blue-txt-cl);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 
   transition: background-color var(--transition-anim-fast);
 }
