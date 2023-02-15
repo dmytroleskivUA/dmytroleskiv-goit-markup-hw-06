@@ -1016,7 +1016,7 @@ button {
   color: var(--light-primary-text-cl);
 }
 
-.modal-icon {
+.modal-close-icon {
   fill: currentColor;
 }
 
