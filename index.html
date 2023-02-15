@@ -29,7 +29,7 @@
   </head>
 
   <body>
-    <!-- Header section -->
+    <!-- HEADER -->
 
     <header class="page-header">
       <div class="header-wrap container">
@@ -68,7 +68,7 @@
       </div>
     </header>
 
-    <!-- Main information -->
+    <!-- MAIN INFORMATION -->
 
     <main>
       <!-- Hero section -->
@@ -472,7 +472,7 @@
       </section>
     </main>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
 
     <footer class="page-footer">
       <div class="container">
@@ -545,30 +545,33 @@
           </ul>
         </div>
 
+        <!-- Subscibe wrap -->
+
         <div class="footer-sbc-wrap">
           <p class="footer-sbc-text">Subscribe</p>
 
-          <form class="footer-sbc-form" autocomplete="off"></form>
-          <label>
-            <input
-              class="sbc-form-input"
-              name="sbc-mail"
-              type="email"
-              required
-              placeholder="Email"
-            />
-          </label>
-          <button class="sbc-form-btn" type="submit"
-            >Subscribe
-            <svg class="subscribe-form-btn-icon" width="24" height="20">
-              <use href="./images/icons.svg#icon-tick"></use>
-            </svg>
-          </button>
+          <form class="footer-sbc-form" autocomplete="off">
+            <label>
+              <input
+                class="sbc-form-input"
+                name="sbc-mail"
+                type="email"
+                required
+                placeholder="Email"
+              />
+            </label>
+            <button class="sbc-form-btn" type="submit"
+              >Subscribe
+              <svg class="subscribe-form-btn-icon" width="24" height="20">
+                <use href="./images/icons.svg#icon-tick"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
 
-    <!-- Modal window -->
+    <!-- MODAL WINDOW -->
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -578,13 +581,11 @@
           </svg>
         </button>
 
-        <!-- FORMS -->
+        <!-- Forms -->
 
-        <strong class="modal-form-text text-center"
-          >Leave your contacts and we will call you back</strong
-        >
+        <p class="modal-form-text text-center"> Leave your contacts and we will call you back </p>
 
-        <form class="modal-form">
+        <form class="modal-form" autocomplete="off">
           <label class="modal-form-field">
             <span class="modal-form-input-desc">Name</span>
             <span class="modal-form-thumb">
@@ -629,7 +630,7 @@
             </span>
           </label>
 
-          <label class="modal-form-field">
+          <label class="modal-comment-field">
             <span class="modal-form-input-desc">Comment</span>
             <textarea
               class="modal-form-comment"
@@ -638,13 +639,17 @@
             ></textarea>
           </label>
 
-          <label class="modal-form-field">
+          <!-- Modal Checkbox -->
+
+          <label>
             <input
               class="modal-form-checkbox visually-hidden"
               id="user-policy"
               name="user_policy"
               type="checkbox"
+              checked
             />
+            <span class="checkbox-icon"></span>
             <span class="modal-form-check-desc">
               I accept the terms and conditions of the
               <a class="modal-form-link" href>Privacy Policy</a>

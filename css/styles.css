@@ -1006,6 +1006,7 @@ button {
   left: 50%;
   width: 408px;
   height: 584px;
+  padding: 72px 24px 24px 24px;
 
   border-radius: 4px;
   background-color: var(--modal-window-bg-cl);
@@ -1072,6 +1073,11 @@ button {
   margin-bottom: 8px;
 }
 
+.modal-comment-field {
+  margin-bottom: 16px;
+}
+
+
 .modal-form-input-desc {
   display: block;
   margin-bottom: 4px;
@@ -1097,7 +1103,7 @@ button {
 }
 
 .modal-form-input:focus {
-  border-color: var(--rgba(33, 33, 33, 0.2));
+  border-color: var(--blue-button-bg-cl);
   outline: none;
 }
 
@@ -1134,38 +1140,43 @@ button {
 }
 
 .modal-form-comment:focus {
-  border-color: rgba(33, 33, 33, 0.2);
+  border-color: var(--blue-button-bg-cl);
   outline: none;
 }
+
+
 
 .modal-form-check-desc {
   display: flex;
   align-items: center;
+  margin-left: 24px;
   margin-bottom: 24px;
+  color: #757575;
 }
 
-.modal-form-check-desc::before {
-  content: '';
-  display: block;
+
+
+.checkbox-icon {
+  position: absolute;
   width: 16px;
   height: 16px;
-  margin-right: 8px;
-  border: 1.25px solid var(--text-dark-color);
-  border-radius: 2px;
-  cursor: pointer;
+  margin-left: auto;
+  padding-right: 10px;
 
-  transition: background-image var(--transition-anim-fast),
-    background-color var(--transition --transition-anim-fast), border-color var(--transition-anim-fast);
+  background-image: url(../images/icons/click-off.svg);
+
+  transition: background-image var(--transition-anim-fast);
 }
 
-.modal-form-checkbox:checked+.modal-form-check-desc::before {
+.modal-form-checkbox:checked+.checkbox-icon {
   border-color: var(--accent-txt-bg-cl);
   background-color: var(--accent-txt-bg-cl);
-  background-image: url('../images/icons/tick-black.svg');
-  background-position: 50% 50%;
-  background-size: 10px 8px;
-  background-repeat: no-repeat;
+  border-radius: 2px;
+  background-image: url(../images/icons/click-on.svg);
+
 }
+
+
 
 
 .modal-form-link {
